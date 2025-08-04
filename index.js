@@ -17,7 +17,7 @@ const wallets = {
   BTC: 'bc1qlg349f7xtej4svyh9k9q3k5cvqv43m4m5337s8',
   ETH: '0xB24bA2bB528C029B5ef11C772707c7a347778EA5',
   LTC: 'LfM12usmw8B3rNrKfYBht68TvNhy9hdLkU',
-  XMR: 'XMR is currently down.',
+  TON: 'UQB2Et0wQ4Q9kNNfbJ0w9MEN5SWjps3u2udLFFmaqqaWGFdT',
   SOL: '3ygsN95By5pyJJnQvjX1hidQk5UixuFu9BEgg6Un3Qu4',
   XRP: 'rLJRmCQgH6sUobzxBNZ5Fk29EztqPMvtJz',
   USDT: '0xB24bA2bB528C029B5ef11C772707c7a347778EA5',
@@ -85,7 +85,7 @@ bot.onText(/\/deposit/, (msg) => {
     reply_markup: {
       inline_keyboard: [
         [{ text: "BTC", callback_data: "deposit_BTC" }, { text: "ETH", callback_data: "deposit_ETH" }],
-        [{ text: "LTC", callback_data: "deposit_LTC" }, { text: "XMR", callback_data: "deposit_XMR" }],
+        [{ text: "LTC", callback_data: "deposit_LTC" }, { text: "TON", callback_data: "deposit_TON" }],
         [{ text: "SOL", callback_data: "deposit_SOL" }, { text: "XRP", callback_data: "deposit_XRP" }],
         [{ text: "USDT", callback_data: "deposit_USDT" }, { text: "USDC", callback_data: "deposit_USDC" }]
       ]
