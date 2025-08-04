@@ -75,7 +75,7 @@ bot.onText(/\/balance/, (msg) => {
   const chatId = msg.chat.id;
   const userId = msg.from.id;
   const balance = balances[userId] || 0;
-  bot.sendMessage(chatId, `💳 Your balance: $${balance.toFixed(2)}\n(Auto credited after deposit)`);
+  bot.sendMessage(chatId, `💳 Your balance: $${balance.toFixed(2)}\n(Automatically credited after deposit)`);
 });
 
 bot.onText(/\/deposit/, (msg) => {
